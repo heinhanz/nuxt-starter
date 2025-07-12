@@ -1,8 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import pageData from '@/data/index.json';
 
-const page = ref(pageData);
 const showForm = ref(false);
 const formSubmitted = ref(false); // Track form submission state
 
@@ -16,7 +14,7 @@ const handleFormSubmit = (event) => {
   event.preventDefault();
   formSubmitted.value = true;
 
-  // Netlify form will automatically handle the submission
+  // Form will be handled by Netlify, wait for success message to show
   setTimeout(() => {
     formSubmitted.value = false; // Reset after 3 seconds
     toggleForm(); // Optionally close the form
@@ -30,7 +28,6 @@ const handleFormSubmit = (event) => {
       <h1 class="logo">XWEBMARKET.EU</h1>
       <h2 class="tagline">Premium Scripts with Unmatched Control</h2>
       <p>Your one-stop shop for premium, never-before-seen scripts. Offering unmatched control over your projects with flexibility and scalability like never before.</p>
-      <p>Our premium scripts empower you to take full charge of your projects with extensive customization, ensuring that you have complete control over every detail. Whether you’re building from scratch or enhancing existing systems, we’ve got the perfect solution for you!</p>
       <p>Stay tuned, new products coming soon!</p>
 
       <!-- Request Service Button -->
@@ -43,7 +40,8 @@ const handleFormSubmit = (event) => {
     <div class="modal-content">
       <h3>Request a Script</h3>
       <form name="contact" method="POST" data-netlify="true" class="contact-form" @submit="handleFormSubmit">
-        <input type="hidden" name="form-name" value="contact">
+        <!-- Netlify required hidden field for form processing -->
+        <input type="hidden" name="form-name" value="contact" />
         
         <p>
           <label for="name">Name</label>
