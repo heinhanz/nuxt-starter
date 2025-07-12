@@ -30,8 +30,6 @@ const handleFormSubmit = (event) => {
       <p>Your one-stop shop for premium, never-before-seen scripts. Offering unmatched control over your projects with flexibility and scalability like never before.</p>
       <p>Stay tuned, new products coming soon!</p>
 
-      <!-- Request Service Button -->
-      <button class="request-button" @click="toggleForm">Request Service</button>
     </div>
   </div>
 
