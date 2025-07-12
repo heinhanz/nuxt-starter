@@ -25,8 +25,8 @@ const handleFormSubmit = (event) => {
 <template>
   <div class="page-container">
     <div class="content">
+      <!-- Logo Container: Replace text with larger, centered logo -->
       <div class="logo-container">
-        <!-- Embed the SVG EU Flag Logo here -->
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1953.31 774.83">
           <defs>
             <style>
@@ -52,7 +52,6 @@ const handleFormSubmit = (event) => {
         </svg>
       </div>
 
-      <h1 class="logo">XWEBMARKET.EU</h1>
       <h2 class="tagline">Premium Scripts with Unmatched Control</h2>
       <p>Your one-stop shop for premium, never-before-seen scripts. Offering unmatched control over your projects with flexibility and scalability like never before.</p>
       <p>Stay tuned, new products coming soon!</p>
@@ -132,26 +131,18 @@ const handleFormSubmit = (event) => {
 }
 
 .logo-container svg {
-  width: 100px;
+  width: 250px; /* Adjust the logo size */
   height: auto;
-}
-
-.logo {
-  font-family: 'TikTok', sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  color: #00ff00;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin-bottom: 20px; /* Add some space below the logo */
 }
 
 .tagline {
-  font-size: 20px;
+  font-size: 24px;
   color: #ff6f00;
   margin-bottom: 30px;
 }
 
-h1, h2 {
+h2 {
   margin: 0;
 }
 
