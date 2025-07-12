@@ -1,12 +1,12 @@
 <script setup>
 useHead({
   htmlAttrs: { lang: "en-US" },
-  title: "Nuxt Starter",
+  title: "XWEBMARKET",
   meta: [
     {
       name: "description",
       content:
-        "Nuxt Starter is a minimal template created for quick landing pages, built with Nuxt and Tailwind CSS.",
+        "Coming Soon",
     },
   ],
   bodyAttrs: {
