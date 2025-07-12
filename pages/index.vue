@@ -27,7 +27,7 @@ const handleFormSubmit = (event) => {
     <div class="content">
       <!-- Logo Container: Replace text with larger, centered logo -->
       <div class="logo-container">
-<svg id="Layer_1" style="margin-bottom: 15px;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1953.31 774.83">
+<svg id="Layer_1" style="margin: 10px auto 40px auto;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1953.31 774.83">
   <defs>
     <style>
       .cls-1 {
