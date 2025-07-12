@@ -25,11 +25,40 @@ const handleFormSubmit = (event) => {
 <template>
   <div class="page-container">
     <div class="content">
+      <div class="logo-container">
+        <!-- Embed the SVG EU Flag Logo here -->
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1953.31 774.83">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+              }
+
+              .cls-1, .cls-2 {
+                stroke-width: 0px;
+              }
+
+              .cls-2 {
+                fill: #ffcd05;
+              }
+            </style>
+          </defs>
+          <g>
+            <!-- SVG content (only essential part shown for brevity) -->
+            <path class="cls-2" d="M53.36,336.66l-17.34,53.36,26.68,8.67-9.34-62.03Z"/>
+            <path class="cls-2" d="M53.36,336.66l17.34,53.36-26.68,8.67,9.34-62.03Z"/>
+            <!-- You can paste the full SVG content here -->
+          </g>
+        </svg>
+      </div>
+
       <h1 class="logo">XWEBMARKET.EU</h1>
       <h2 class="tagline">Premium Scripts with Unmatched Control</h2>
       <p>Your one-stop shop for premium, never-before-seen scripts. Offering unmatched control over your projects with flexibility and scalability like never before.</p>
       <p>Stay tuned, new products coming soon!</p>
 
+      <!-- Request Service Button -->
+      <button class="request-button" @click="toggleForm">Request Service</button>
     </div>
   </div>
 
@@ -102,18 +131,23 @@ const handleFormSubmit = (event) => {
   color: #fff;
 }
 
+.logo-container svg {
+  width: 100px;
+  height: auto;
+}
+
 .logo {
   font-family: 'TikTok', sans-serif;
   font-size: 36px;
   font-weight: bold;
-  color: #00ff00; /* Vibrant lime */
+  color: #00ff00;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .tagline {
   font-size: 20px;
-  color: #ff6f00; /* Vibrant orange */
+  color: #ff6f00;
   margin-bottom: 30px;
 }
 
